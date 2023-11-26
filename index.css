@@ -1,0 +1,293 @@
+/* Styles for the intro section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+.browse-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.browse-button:hover {
+    background-color: #1976d2;
+}
+
+/* Styles for the video section */
+.video-section {
+    flex: 1;
+    max-width: 50%;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Default styles for the footer bar */
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #2196f3;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.helpful-links,
+.contact-info,
+.social-links {
+    flex: 1;
+    text-align: center;
+}
+
+.helpful-links h1,
+.contact-info h1,
+.social-links h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.helpful-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Make "Helpful Links" vertical */
+}
+
+.helpful-links li {
+    margin-bottom: 5px;
+}
+
+/* Remove text decoration from links inside the "Helpful Links" section */
+.helpful-links ul li a {
+    text-decoration: none;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Make "Social Links" horizontal */
+    justify-content: center; /* Center the social icons horizontally */
+}
+
+.social-links li {
+    margin-right: 10px; /* Add spacing between social icons */
+}
+
+
+
+/* Styles for the filter section */
+.filter-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.filter-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.filter-list a:hover {
+    color: #007bff;
+}
+
+/* Book Card Styling */
+.book-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-card {
+    width: 280px; /* Adjust the card width as needed */
+    margin: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.book-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.book-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Style for the Buy section */
+label[for="quantity"] {
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+
+input#quantity {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10px; /* Add space between input and button */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button.add-to-cart {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: 1px solid #007bff; /* Blue border */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+}
+
+button.add-to-cart:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border: 1px solid #0056b3; /* Darker blue border on hover */
+}
+
+
+
+/* Add more specific styles for additional information if needed */
+
+/* Category Filter Styling */
+.filter-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.filter-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.filter-list a:hover {
+    color: #ff6600; /* Adjust the hover color as needed */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .helpful-links,
+    .contact-info,
+    .social-links {
+        flex: auto;
+        width: 100%;
+    }
+
+    .footer-logo img {
+        margin: 0;
+    }
+
+    .helpful-links ul {
+        margin-top: 10px; /* Add spacing between the "Helpful Links" and other sections */
+    }
+}
+
+
+/* Responsive Media Queries (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .intro-text {
+        margin-bottom: 20px;
+    }
+
+    .video-section {
+        max-width: 100%;
+    }
+}

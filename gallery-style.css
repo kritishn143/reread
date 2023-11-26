@@ -1,0 +1,73 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-info {
+    text-align: left;
+    margin-top: auto;
+}
+
+.image-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* ... (existing styles) */
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+}

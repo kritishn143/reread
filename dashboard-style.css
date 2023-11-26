@@ -1,0 +1,261 @@
+/* Reset default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add margin-right to create a gap between search and login/sign-up */
+.search-bar {
+    margin-right: 6px; /* Adjust the margin as needed */
+}
+
+.top-right {
+    margin-right: 8px; /* You can adjust this margin as needed */
+}
+
+
+/* Style for the "Log In" button */
+.login-button {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #111213;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 5px; /* Increase the margin-right to move it to the left */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #1976d2;
+}
+
+/* Style for the "Sign Up" button */
+.signup-button {
+    display: inline-block;
+    padding: 8px 10px; /* Adjust padding as needed */
+    background-color: #111213;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 5px; /* Adjust margin-right as needed */
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #1976d2;
+}
+
+
+
+/* Responsive Media Query for screens up to 768px width */
+@media screen and (max-width: 768px) {
+    .top-left {
+        flex-direction: column; /* Stack logo and name vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+    }
+
+    .top-left img {
+        margin: 4px 0; /* Add spacing between logo and name */
+    }
+
+    .top-left a {
+        margin-left: 0; /* Reset left margin for the text */
+    }
+
+    .top-right {
+        text-align: center; /* Center the content */
+    }
+
+    .top-right a {
+        margin: 10px 0; /* Add spacing between navigation items */
+    }
+
+    /* Adjustments for search form */
+    .search-form {
+        flex-direction: row; /* Reset to horizontal layout */
+        align-items: center;
+    }
+
+    .search-form input[type="text"] {
+        flex-grow: 0; /* Limit input width to its content */
+    }
+
+    .search-button {
+        padding: 8px; /* Reduce button padding */
+    }
+}
+
+/* Base styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li.top-left {
+    margin-right: auto;
+}
+
+.top-left {
+    align-items: center;
+}
+
+.top-left a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.top-left img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Search form styles */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+/* Search button styles */
+.search-button {
+    background-color: #252627;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-left: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.search-button:hover {
+    background-color: #1976d2;
+}
+
+/* Navigation for the right side */
+nav ul li.top-right {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+    display: flex;
+}
+
+
+
+/* Content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav ul li:not(.top-left) {
+    margin-right: 10px;
+}
+
+/* User profile styles */
+.user-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px;
+}
+
+.user-profile img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.edit-profile-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

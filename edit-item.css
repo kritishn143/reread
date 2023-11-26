@@ -1,0 +1,59 @@
+/* Your custom CSS styles for the specific form */
+#update-item-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* ... (other styles) ... */
+}
+
+/* Target the specific form elements by their IDs */
+#description,
+#author,
+#category,
+#book_name,
+#new_image,
+#price,
+#quantity {
+    /* Your custom styles for form elements */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+#submit {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 15px; /* Add some space between button and other elements */
+}
+
+/* Center the submit button */
+#submit {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover effect for the submit button */
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Apply some spacing to the form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Apply some spacing to the form elements */
+.form-group:not(:last-child) {
+    margin-bottom: 20px;
+}

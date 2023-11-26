@@ -1,0 +1,77 @@
+/* Style for Order Summary */
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.order-summary {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+table th, table td {
+    border: 1px solid #e1e1e1;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tfoot th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.order-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.order-actions input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-actions input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .order-summary {
+        border: none;
+    }
+
+    table th, table td {
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    tfoot th {
+        border: none;
+    }
+
+    .order-actions {
+        text-align: center;
+    }
+}
